@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="panel panel-primary well">
+      <div class="panel-heading">User Profile</div>
+      <p>
+        <strong>Name</strong>
+        <%= current_user.name %>
+      </p>
+
+      <p>
+        <strong>Email</strong>
+        <%= current_user.email %>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_user_registration_path(@todo), class: 'btn btn-primary' %> |
+<%= link_to 'Back', root_path, class: 'btn btn-primary' %>
