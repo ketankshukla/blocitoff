@@ -1,14 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<div class="row">
+  <div class="col-sm-3">
+    <div class="panel panel-primary well">
+
 <p>
-  <strong>Name:</strong>
+  <strong>Todo Item:</strong>
   <%= @todo.name %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>Created By:</strong>
   <%= @todo.user.name %>
 </p>
 
-<%= link_to 'Edit', edit_todo_path(@todo) %> |
-<%= link_to 'Back', todos_path %>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_todo_path(@todo), class: 'btn btn-primary' %> |
+<%= link_to 'Back', todos_path, class: 'btn btn-primary' %>
