@@ -1,6 +1,6 @@
 set :output, "/log/todos_older_than_7_days.log"
 
-every :minute do
+every :hour do
   rake todo:delete_todos
 end
 
