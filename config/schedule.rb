@@ -1,7 +1,7 @@
 set :output, "/log/todos_older_than_7_days.log"
 
-every 1.day do
-  rake "Delete ToDos older than seven days"
+every :minute do
+  rake todo:delete_todos
 end
 
 # Use this file to easily define all of your cron jobs.
