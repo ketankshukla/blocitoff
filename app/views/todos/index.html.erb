@@ -8,7 +8,7 @@
       <thead>
       <tr>
         <th>Check</th>
-        <th>Time Remaining</th>
+        <th>Age of Post</th>
         <th>Todo Item</th>
         <th>Created By</th>
         <th>Email</th>
@@ -19,7 +19,7 @@
       <% @todos.each do |todo| %>
           <tr id="<%= todo.id %>">
             <td><%= link_to "", todo, method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></td>
-            <td><%= todo.days_left %> days</td>
+            <td><%= todo.days_left %></td>
             <td><%= todo.name %></td>
             <td><%= todo.user.name %></td>
             <td><%= todo.user.email %></td>
