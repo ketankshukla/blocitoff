@@ -16,7 +16,7 @@ users = User.all
       user: users.sample,
       name: Faker::Lorem.sentence
   )
-  todo.update_attribute(:created_at, rand(10.minutes .. 6.days).ago)
+  todo.update_attribute(:created_at, rand(10.minutes .. 10.days).ago)
 end
 
 user = User.new(
